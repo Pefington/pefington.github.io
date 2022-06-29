@@ -1,0 +1,170 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: #5f6368;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 8px;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+}
+
+.header-end-items {
+  margin: 8px;
+}
+
+.button {
+  padding: 9px 23px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-blue {
+  background-color: #2b7de9;
+  color: white;
+}
+
+.button-blue:hover {
+	box-shadow: 0 1px 2px 0 rgba(66,133,244,.3),0 1px 3px 1px rgba(66,133,244,.15);
+}
+
+.button-grey {
+  background-color: #f8f9fa;
+}
+
+.button-grey:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	background-color: #f8f9fa;
+	border: 1px solid #dadce0;
+	color: #202124;
+}
+
+.search-buttons-div {
+  margin: 12px 0 36px;
+}
+
+.language-link {
+  color: mediumblue;
+  font-size: small;
+}
+
+svg {
+  height: 24px;
+  fill: currentColor;
+  margin: 0 24px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-self: end;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 272px;
+  margin-top: 80px;
+}
+
+.search-bar {
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  margin: 28px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #999;
+  margin: 0 14px;
+}
+
+input {
+  width: 75vw;
+  height: 44px;
+  border: none;
+  outline: none;
+}
+
+footer {
+  color: #777;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  margin: 15px 28px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  /* padding: 15px; */
+}
+
+.footer-links > div {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 15px;
+}
+
+footer a {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 664px) {
+  .footer-links {
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  /* .footer-links > div {
+    margin: 10px
+  } */
+}
